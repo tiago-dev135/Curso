@@ -1,0 +1,335 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgb(36, 35, 35);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #fff;
+    border-right: 0.08em solid #333; /* Cursor */
+    white-space: nowrap;
+    overflow: hidden; /* Necessário para efeito de texto digitado */
+}
+.hero-section {
+    background-image: url('https://www.convergenciadigital.com.br/media/2023/grafico-aumento.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+.hero-subtitle {
+    font-size: 1.5em;
+}
+.cta-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s;
+    animation: shadow-pulse 2s infinite;
+}
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main-section {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.main-section h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+.main-section h2 {
+    color: #39FF14; /* Neon verde */
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+.themes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.theme {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.theme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.theme-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+.theme-description {
+    color: #777;
+}
+.benefits-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.benefits-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.benefits-card h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.benefits-card p {
+    color: #555;
+}
+
+.course-section {
+background-color: #1c1c1c; /* Fundo escuro para contraste */
+padding: 60px 20px;
+text-align: center;
+color: white;
+}
+
+.course-section h1,
+.course-section h2 {
+margin-bottom: 20px;
+}
+
+.course-section h1 {
+color: #39FF14; /* Neon verde */
+font-size: 2.5em;
+}
+
+.course-section h2 {
+color: #FF1493; /* Rosa fluorescente */
+font-size: 1.5em;
+margin-bottom: 40px;
+}
+
+.topics {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+}
+
+.topic {
+background-color: #333;
+padding: 20px;
+border-radius: 8px;
+width: 220px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+cursor: pointer;
+color: #fff; /* Texto em branco */
+border: 2px solid transparent; /* Bordas para hover */
+}
+
+.topic:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(57, 255, 20, 0.6);
+border: 2px solid #39FF14; /* Neon verde */
+}
+
+.topic-title {
+font-size: 1.2em;
+margin: 10px 0;
+color: #39FF14; /* Neon verde */
+}
+
+.topic-description {
+color: #ddd; /* Texto mais claro */
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilo da track (fundo da barra de rolagem) */
+::-webkit-scrollbar-track {
+    background: #333; /* Cor de fundo da track */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estilo do thumb (parte móvel da barra de rolagem) */
+::-webkit-scrollbar-thumb {
+    background-color: #39FF14; /* Cor neon verde */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 2px solid #333; /* Borda para contraste */
+    transition: background-color 0.3s, border 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover no thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2b292a7e; /* Cor rosa fluorescente ao passar o mouse */
+    border: 2px solid #39FF14; /* Borda neon verde ao passar o mouse */
+    transition:1s;
+}
+.course-complement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 60px 20px;
+    background: linear-gradient(to right, white 50%, black 50%);
+    color: #333;
+}
+
+.course-complement-left,
+.course-complement-right {
+    flex: 1;
+    min-width: 300px; /* Garantir responsividade */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.course-complement-left {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tutors-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.tutor {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.tutor h3 {
+    color: #39FF14; /* Neon verde */
+    margin-top: 10px;
+}
+
+.tutor p {
+    color: #555;
+    margin-top: 10px;
+}
+
+.tutor img.tutor-image {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Manter a proporção */
+    border-radius: 50%; /* Imagens redondas */
+    object-fit: cover; /* Ajusta a imagem ao espaço */
+    margin-bottom: 10px;
+}
+
+.tutor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(57, 255, 20, 0.6);
+}
+
+.course-complement-right {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-complement-right h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #39FF14; /* Neon verde */
+}
+
+.course-complement-right ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.course-complement-right ul li {
+    background-color: #222;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course-complement-right ul li:hover {
+    background-color: #39FF14;
+    color: black;
+}
