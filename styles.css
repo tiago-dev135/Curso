@@ -9,7 +9,7 @@ body {
     top: 0;
     width: 100%;
     padding: 20px 0;
-    background: rgb(36, 35, 35);
+    background: rgba(36, 35, 35, 0.823);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -30,7 +30,7 @@ body {
     overflow: hidden; /* Necessário para efeito de texto digitado */
 }
 .hero-section {
-    background-image: url('https://www.convergenciadigital.com.br/media/2023/grafico-aumento.jpg');
+    background-image: url('imagens/fundo.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
