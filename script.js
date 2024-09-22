@@ -181,3 +181,13 @@ function getBotResponse(message) {
     }, 2000);
 }
 
+/*script para rolagem de botão*/
+ // Selecionar o botão e a seção alvo
+ const scrollButton = document.getElementById('scrollButton');
+ const targetSection = document.getElementById('targetSection');
+
+ // Adicionar o evento de clique ao botão
+ scrollButton.addEventListener('click', () => {
+     // Rolar até a seção alvo
+     targetSection.scrollIntoView({ behavior: 'smooth' });
+ });
